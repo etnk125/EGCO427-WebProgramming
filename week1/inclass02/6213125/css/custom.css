@@ -1,0 +1,98 @@
+
+
+body {
+  background: #141414;
+}
+.card {
+  background: rgb(30, 30, 30);
+  position: relative;
+  max-width: 100%;
+  width: 300px;
+  margin: 20px auto;
+  /* box-shadow: 0,0,0,40px,rgba(0,0,0,.2); */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.card .card-img-top {
+  opacity: 0.8;
+  filter: blur(0.4px);
+  transition: 0.7s;
+}
+.card .round {
+  border: transparent;
+  border-radius: 50%;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 120px;
+  opacity: 0.95;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  /* filter:blur(10px) */
+  transition: 0.7s;
+}
+
+.card .head i{
+  display: inline;
+  color: #fff;
+}
+.card .head h4{
+  /* display: justify; */
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+.card .card-body {
+  /* padding: 20% 10% 0px ; */
+  color: #fff;
+}
+.card .card-body .card-title {
+  text-align: center;
+}
+/* .card .card-body .col-md-6 .card-link{ */
+.card .card-body .col center .card-link {
+  margin: 0 15%;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.card #text {
+  color: white;
+  opacity: 0;
+  max-height: 0;
+  text-align: center;
+  /* border-bottom: 1px solid #fff; */
+  overflow: hidden;
+  transition: all 0.6s ease 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(38, 121, 255, 0.8);
+  transition:  0.7s;
+}
+
+.card:hover #text {
+  opacity: 1;
+  max-height: 100%;
+  text-align: justify;
+  padding: 0 12%;
+  /* transform:transformY(1000%); */
+  /* transition: all 0.6s ease 0.15s; */
+}
+
+.card:hover .round {
+  border-radius: 10%;
+  transform: scale(1.05);
+  /* transform:rotate(360deg); */
+  transition: 0.4s;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+.card .card-body .col center .card-link:hover {
+  color: #fff;
+}
+/* Natthawee K.  */
