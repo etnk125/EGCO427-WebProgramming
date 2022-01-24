@@ -3,6 +3,20 @@
     <script type="text/javascript">
       function showHint(str) {
         //Add your code here
+        xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+          }
+        };
+
+        xmlhttp.open(
+          "GET",
+          "http://www.atilal.com/course/egci427/ajax/hint/gethint.php?q=" + str,
+          true
+        );
+        xmlhttp.send();
       }
     </script>
   </head>

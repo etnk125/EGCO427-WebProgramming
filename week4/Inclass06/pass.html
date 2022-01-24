@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <script>
+      var showInfo = () => {
+        var u = document.getElementById("a").value;
+        var p = document.getElementById("b").value;
+        alert(`username: ${u} password: ${p}`);
+      };
+    </script>
+  </head>
+  <body>
+    <form>
+      <p>
+        Username:
+        <input type="text" id="a" name="username" />
+      </p>
+      <p>
+        Password
+        <input type="password" id="b" name="password" />
+      </p>
+      <p>
+        <input
+          type="button"
+          id="submit"
+          name="submit"
+          value="Submit"
+          onclick="showInfo();"
+        />
+        <input type="button" id="cancel" name="cancel" value="Cancel" />
+      </p>
+    </form>
+  </body>
+</html>

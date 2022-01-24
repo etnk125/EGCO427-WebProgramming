@@ -3,16 +3,17 @@
     <script type="text/javascript">
       if (window.XMLHttpRequest) {
         // code for IE7+, Firefox, Chrome, Opera, Safari
-        var xmlhttp = new XMLHttpRequest();
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
       }
-
       xmlhttp.open("GET", "books.xml", false);
       xmlhttp.send();
-      var xmlDoc = xmlhttp.responseXML;
+      xmlDoc = xmlhttp.responseXML;
 
-      //Add new attribute "edition"
-      var x = xmlDoc.getElementsByTagName("book");
-      for (var i = 0; i < x.length; i++) {
+      x = xmlDoc.getElementsByTagName("book");
+      for (i = 0; i < x.length; i++) {
         x[i].setAttribute("edition", "first");
       }
 
