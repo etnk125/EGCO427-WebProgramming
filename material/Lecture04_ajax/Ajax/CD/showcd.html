@@ -1,33 +1,36 @@
 <html lang="en">
-  <head>
-    <script type="text/javascript">
-      if (window.XMLHttpRequest) {
-        // code for IE7+, Firefox, Chrome, Opera, Safari
-        var xmlhttp = new XMLHttpRequest();
-      }
+
+<head>
+  <script type="text/javascript">
+    if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      var xmlhttp = new XMLHttpRequest();
+    }
+    //Add your code here
+    xmlhttp.open("GET", "cd_catalog.xml", true);
+    xmlhttp.send();
+    let xmlDoc = xmlhttp.responseXML;
+
+    function displayCD() {
       //Add your code here
-      xmlhttp.open("GET", "cd_catalog.xml", true);
-      xmlhttp.send();
-      let xmlDoc = xmlhttp.responseXML;
+      console.log(xmlDoc);
+      let showCD = document.querySelector("#showCD");
+      // console.log(temp);
+      // let catalog = xmlDoc.documentElement.childNodes;
+      let catalog = xmlDoc.documentElement.childNodes[0];
+      console.log(catalog);
+      for (let i = 0; i < catalog.length; i++) {
+        // console.log(e);
 
-      function displayCD() {
-        //Add your code here
-        console.log(xmlDoc);
-        let showCD = document.querySelector("#showCD");
-        // console.log(temp);
-        // let catalog = xmlDoc.documentElement.childNodes;
-        let catalog = xmlDoc.documentElement.childNodes[0];
-        console.log(catalog);
-        for (let i ;i< catalog.length ;i++) {
-          // console.log(e);
-
-          console.log('in');
-          console.log(i);
-        }
+        console.log('in');
+        console.log(i);
       }
-    </script>
-  </head>
-  <body onload="displayCD()">
-    <div id="showCD"></div>
-  </body>
+    }
+  </script>
+</head>
+
+<body onload="displayCD()">
+  <div id="showCD"></div>
+</body>
+
 </html>
