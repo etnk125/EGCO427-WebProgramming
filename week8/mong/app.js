@@ -68,4 +68,5 @@ function findMany() {
   });
 }
 
-findMany();
+// findMany();
+createCollection();
