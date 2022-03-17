@@ -1,0 +1,25 @@
+// HTML
+<script src="https://unpkg.com/vue@next"></script> 
+<div id = "data" class="demo"> 
+<p >{{message}}</p>
+<p>{{uppercase(ex1)}}</p> 
+<p>{{uppercase(ex2,'')}}</p> 
+</div> 
+
+// VueJS
+const App = { 
+  data() { 
+    return { 
+      message: 'this is message!',
+      ex1: 'this is titlecased message!',
+      ex2: 'this is titlecased message without space!'
+    } 
+  }, 
+  methods:{
+    uppercase:function(word="",separator=' '){
+      return word.toString().split(' ').map(word=>(word.charAt(0).toUpperCase()+word.slice(1))).join(separator)
+    }
+  }
+} 
+
+Vue.createApp(App).mount('#data')
