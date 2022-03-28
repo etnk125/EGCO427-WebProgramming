@@ -3,6 +3,7 @@
     {{ titlecase(message) }}
     title
   </h1>
+  <hr />
 </template>
 
 <script>

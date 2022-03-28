@@ -1,13 +1,8 @@
 <template>
-  <h1>
-    {{ getName().name }}
-  </h1>
-  <h1>
-    {{ getName("moded", "name").name }}
-  </h1>
-  <h1>
-    {{ uppercase("this is uppercase") }}
-  </h1>
+  <h1>{{ getName().name }}</h1>
+  <h1>{{ getName("moded", "name").name }}</h1>
+  <h1>{{ uppercase("this is uppercase") }}</h1>
+  <hr />
 </template>
 
 

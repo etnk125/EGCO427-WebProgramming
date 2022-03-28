@@ -1,11 +1,8 @@
 <template>
-  <h1>
-    {{ message }}
-  </h1>
-  <p>
-    {{ age > 60 ? "old" : "yousng" }}
-  </p>
+  <h1>{{ message }}</h1>
+  <p>{{ age > 60 ? "old" : "yousng" }}</p>
   <p>{{ counter }}</p>
+  <hr />
 </template>
 
 
