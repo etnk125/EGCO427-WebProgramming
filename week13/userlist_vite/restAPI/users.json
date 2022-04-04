@@ -1,0 +1,98 @@
+[{
+    "_id": ObjectId("5aa1020ce2f50ebadb85d97a"),
+    "firstName": "Bob",
+    "lastName": "Cat",
+    "email": "bob@mail.com",
+    "createdDate": "2018-03-08T18:00:00.000Z"
+  },
+
+  {
+    "_id": ObjectId("5aa1021ce2f50ebadb85d97f"),
+    "firstName": "Tom",
+    "lastName": "Cat",
+    "email": "bob@mail.com",
+    "createdDate": "2018-03-08T18:01:00.000Z"
+  },
+
+  {
+    "_id": ObjectId("5aa13176ebe9b40749adc61f"),
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@mail.com",
+    "createdDate": ISODate("2018-03-08T12:49:58.882Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa131d2ebe9b40749adc620"),
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane@mail.com",
+    "createdDate": ISODate("2018-03-08T12:51:30.009Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa13eb02235da08f4bd3fb5"),
+    "firstName": "timmy",
+    "lastName": "time",
+    "email": "timmy@mail.com",
+    "createdDate": ISODate("2018-03-08T13:46:24.997Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa14808550d8a0a7c2443b8"),
+    "firstName": "Robert",
+    "lastName": "Birt",
+    "email": "robert@mail.com",
+    "createdDate": ISODate("2018-03-08T14:26:16.484Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa14a4c550d8a0a7c2443bb"),
+    "firstName": "Mike",
+    "lastName": "Mee",
+    "email": "mike@mail.com",
+    "createdDate": ISODate("2018-03-08T14:35:56.282Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa1f9d0384ba605ae83de1e"),
+    "firstName": "Ethan",
+    "lastName": "Hawk",
+    "email": "ethan@mail.com",
+    "createdDate": ISODate("2018-03-09T03:04:48.309Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa20016384ba605ae83de1f"),
+    "firstName": "Ken",
+    "lastName": "Doe",
+    "email": "ken@mail.com",
+    "createdDate": ISODate("2018-03-09T03:31:34.977Z"),
+    "__v": 0
+  },
+
+
+  {
+    "_id": ObjectId("5aa201a7384ba605ae83de20"),
+    "firstName": "Dany",
+    "lastName": "Dawn",
+    "email": "dant@mail.com",
+    "createdDate": ISODate("2018-03-09T03:38:15.447Z"),
+    "__v": 0
+  },
+
+  {
+    "_id": ObjectId("5aa201c4384ba605ae83de21"),
+    "firstName": "Debby",
+    "lastName": "Hawk",
+    "email": "debby@mail.com",
+    "createdDate": ISODate("2018-03-09T03:38:44.042Z"),
+    "__v": 0
+  }
+]
