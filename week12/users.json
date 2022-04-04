@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "62412996e2598bdcfb8b5af9"
+  },
+  "firstName": "Bob",
+  "lastName": "Cat",
+  "email": "bob@mail.com",
+  "createdDate": "2018-03-08T18:00:00.000Z"
+},{
+  "_id": {
+    "$oid": "624129bce2598bdcfb8b5afb"
+  },
+  "firstName": "Tom",
+  "lastName": "Cat",
+  "email": "bob@mail.com"
+},{
+  "_id": {
+    "$oid": "62412a1ae2598bdcfb8b5afd"
+  },
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane@mail.com"
+},{
+  "_id": {
+    "$oid": "62412a1ae2598bdcfb8b5afe"
+  },
+  "firstName": "timmy",
+  "lastName": "time",
+  "email": "timmy@mail.com"
+},{
+  "_id": {
+    "$oid": "62412a1ae2598bdcfb8b5aff"
+  },
+  "firstName": "Mike",
+  "lastName": "Mee",
+  "email": "mike@mail.com"
+}]
