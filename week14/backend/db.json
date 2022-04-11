@@ -1,0 +1,22 @@
+{
+  "cities": {
+    "1": {
+      "name": "Syracuse",
+      "detail": "Syracuse is a city in and the county seat of Onondaga County, New York, in the United States. It is the largest U.S. city with the name Syracuse, and is the fifth most populous city in the state of New York.",
+      "image": "ny.png"
+    },
+
+
+    "2": {
+      "name": "Cleveland",
+      "detail": "Cleveland is a city in the U.S. state of Ohio, and the county seat of Cuyahoga County, the state's second most-populous county. Located along Lake Erie, the city proper has a population of 388,072",
+      "image": "oh.png"
+    },
+
+    "3": {
+      "name": "Miami",
+      "detail": "Miami is a major port city on the Atlantic coast of south Florida in the southeastern United States. As the seat of Miami-Dade County, the municipality is the principal, central.",
+      "image": "fl.png"
+    }
+  }
+}
