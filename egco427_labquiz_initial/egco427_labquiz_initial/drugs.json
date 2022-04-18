@@ -1,0 +1,26 @@
+/* 1 */
+{
+    "_id" : ObjectId("5ab72d7d214c0d5667dcfed7"),
+    "name" : "Tylenol",
+    "dose" : "500mg",
+    "package" : 2,
+    "unit" : "2x5"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5ab73c3df003ac8939f13166"),
+    "name" : "Ibuprofen",
+    "dose" : "200mg",
+    "package" : 2,
+    "unit" : "2x4"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5ab73c45f003ac8939f1316a"),
+    "name" : "Simethicone",
+    "dose" : "25mg",
+    "package" : 3,
+    "unit" : "2x6"
+}

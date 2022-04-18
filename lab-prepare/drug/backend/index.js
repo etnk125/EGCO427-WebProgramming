@@ -1,7 +1,7 @@
 const app = require("./app");
 
 // port config
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 const server = app.listen(port, () => {
   const host = server.address().address;
   const port = server.address().port;

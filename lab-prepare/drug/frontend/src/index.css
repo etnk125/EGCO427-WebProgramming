@@ -8,12 +8,17 @@
   width: 95%;
 }
 
+
 body {
-  background-color: #EEEEEE;
-  font-family: 'Montserrat', sans-serif;
+  /* background-color: #EEEEEE; */
+  /* font-family: 'Montserrat', sans-serif; */
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   align-items: top;
-  padding-top: 70px;
+  /* padding-top: 70px; */
+}
+
+img {
+  border-radius: 5px
 }

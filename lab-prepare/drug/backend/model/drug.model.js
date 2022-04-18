@@ -7,13 +7,10 @@ const Schema = mongoose.Schema;
 // const unique = require("mongoose-unique-validator");
 
 const contactSchema = new Schema({
-  cid: { type: String },
-  firstname: { type: String },
-  lastname: { type: String },
-  mobile: { type: String },
-  email: { type: String },
-  facebook: { type: String },
-  imageUrl: { type: String },
+  name: { type: String },
+  dose: { type: String },
+  package: { type: Number },
+  unit: { type: String },
 });
 
 // for hashing password
@@ -27,4 +24,4 @@ contactSchema.pre("save", (next) => {
 });
 */
 
-module.exports = mongoose.model("Contacts", contactSchema);
+module.exports = mongoose.model("drugs", contactSchema);

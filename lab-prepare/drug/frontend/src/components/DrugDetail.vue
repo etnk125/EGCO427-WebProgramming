@@ -10,7 +10,7 @@
           </div>
           <div class="panel-body">
             <div class="border" style="padding: 15px">
-              <form action="index.html" method="post">
+              <div>
                 <div class="row">
                   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <b>Name:</b>
@@ -50,7 +50,7 @@
                   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <b>Total:</b>
                   </div>
-                  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">{{total}}</div>
+                  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">{{total}} pill{{total>2?'s':''}}</div>
                 </div>
                 <hr />
                 <br />
@@ -59,7 +59,11 @@
                     <b>Image:</b>
                   </div>
                   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                    <img src="../assets/img/default.jpg" width="100" alt />
+                    <img
+                      :src="`/src/assets/img/${drug.name||'default'}.jpg`||'/src/assets/img/default.jpg'"
+                      width="100"
+                      alt
+                    />
                   </div>
                 </div>
                 <hr />
@@ -69,7 +73,7 @@
                     <router-link to="/" type="button" class="btn btn-info">Back to Main</router-link>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -81,21 +85,27 @@
 </template>
 
 <script>
-import drugsJson from "../drugs.json";
+// import drugsJson from "../drugs.json";
+import { getDrug, calDrug } from "../services/drug.service";
+import store from "../store";
+import { ref } from "vue";
 export default {
   name: "Detail",
   data() {
     return {
-      drug: "",
+      drug: {},
       total: "",
     };
   },
-  created() {
-    console.log(drugsJson);
-    this.drug = drugsJson[this.$route.params.id];
-    this.total = this.drug["unit"]
-      .split("x")
-      .reduce((acc, cur) => acc * cur, 1);
+
+  async created() {
+    try {
+      this.drug = await getDrug(this.$route.params._id);
+      this.total = (await calDrug(this.$route.params)).total;
+    } catch (err) {
+      store.addMessage("something went wrong");
+      console.error(err);
+    }
   },
   mounted() {},
   methods: {},
@@ -119,5 +129,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.btn {
+  background-color: rgb(244, 244, 244);
+  border: none;
 }
 </style>

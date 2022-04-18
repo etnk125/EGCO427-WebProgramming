@@ -4,15 +4,9 @@ require("./config/database").connect();
 const express = require("express");
 
 // import controller
-const getOneController = require("./controller/getOne.controller");
-const getAllController = require("./controller/getAll.controller");
-const postController = require("./controller/post.controller");
-const editController = require("./controller/edit.controller");
-const deleteController = require("./controller/delete.controller");
-const loginController = require("./controller/login.controller");
-
-// incase using bcryptjs
-// const bcrypt = require("bcryptjs");
+const getDrug = require("./controller/getDrug.controller");
+const calDrug = require("./controller/calDrug.controller");
+const getDrugList = require("./controller/getDrugList.controller");
 
 const app = express();
 
@@ -30,23 +24,11 @@ app.use(
   })
 );
 
-// get all contact
-app.get("/contacts/", getAllController);
-// get one contact
-app.get("/contacts/:id", getOneController);
-
-// add one contact
-app.post("/contacts", postController);
-// edit one contact
-app.post("/contacts/:id", editController);
-
-// delete one contact
-app.delete("/contacts/:id", deleteController);
-
-// login
-app.post("/login", loginController);
-// app.get("/login", loginController);
-// get request should not have body
-// get work in postman but not work in browser
+// get all drug
+app.get("/drugs/", getDrugList);
+// get one drug
+app.get("/drugs/:id", getDrug);
+// cal
+app.get("/calculate/:package/:unit", calDrug);
 
 module.exports = app;
